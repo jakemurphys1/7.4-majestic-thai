@@ -1,0 +1,35 @@
+{
+  "Specials":[
+    {"Name":"General Tso's Chicken",
+    "cost":850},
+    {"Name":"Private Pai's Pork",
+    "cost":950},
+    {"Name":"Pacifist Wong's Veggie Soup",
+    "cost":600},
+  ],
+  "Rice":[
+    {"Name":"Chicken",
+    "cost":650},
+    {"Name":"Pork",
+    "cost":750},
+    {"Name":"Shrimp",
+    "cost":950},
+    {"Name":"Steak",
+    "cost":1050},
+    {"Name":"Chicken and Shrimp",
+    "cost":1250},
+  ],
+  "Desserts":[
+    {"Name":"Chocolate Pudding",
+    "cost":650},
+    {"Name":"Vanilla Pudding",
+    "cost":650},
+    {"Name":"Fortune Cookie",
+    "cost":150},
+  ],
+  "Noodles":[
+    {"Name":"Vegetable","cost":650},
+    {"Name":"Pork","cost":750},
+    {"Name":"Chicken","cost":850},
+  ]
+}

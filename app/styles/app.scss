@@ -1,0 +1,63 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body{
+  background-color: gray;
+}
+
+.header{
+  background-color: black;
+  height:200px;
+  h1{
+    color:red;
+    text-align: center;
+    font-size: 70px;
+    padding: 60px;
+  }
+}
+
+.foodlist{
+  border:black solid 1px;
+  margin-top:20px;
+  h2{
+    text-align: center;
+  }
+  p{
+    font-size:20px;
+  }
+}
+
+.container{
+  h1{
+    text-align: center;
+    font-size: 60px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  h3{
+    font-weight: bolder;
+  }
+  .checkoutItem{
+    border:black solid 1px;
+    border-radius:5px;
+    text-align: center;
+    background-color: red;
+    width:150px;
+  }
+}
