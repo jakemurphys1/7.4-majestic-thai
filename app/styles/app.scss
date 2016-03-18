@@ -27,12 +27,11 @@ body{
     color:red;
     text-align: center;
     font-size: 70px;
-    padding: 60px;
+    padding: 50px;
   }
 }
 
 .foodlist{
-  border:black solid 1px;
   margin-top:20px;
   h2{
     text-align: center;
@@ -58,6 +57,59 @@ body{
     border-radius:5px;
     text-align: center;
     background-color: red;
-    width:150px;
+    width:120px;
   }
+}
+
+.footer{
+  background-color:black;
+  height:100px;
+}
+
+.Checkout{
+  float:right;
+  width:150px;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.ItemList{
+  font-size: 30px;
+  .Empty{
+text-align: center;
+font-size: 40px;
+  }
+
+  .Pay{
+    font-size: 30px;
+        float:right;
+  }
+  .PayDiv{
+    margin-top: 8px;
+  }
+  .Items{
+text-align: center;
+  }
+}
+
+.Total{
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.confirmForm{
+  position:fixed;
+  background-color:green;
+  border:black solid 1px;
+  height:70px;
+  font-size: 20px;
+  z-index: 3;
+  float:right;
+  margin-top: -200px;
+  margin-left: 80%;
+  padding:5px;
+  box-shadow: 10px 10px 5px #111111;
+}
+.invisible{
+  visibility: hidden;
 }
