@@ -5818,16 +5818,29 @@ img {
   max-width: 100%; }
 
 body {
-  background-color: gray; }
+  background-color: #290505; }
+
+p {
+  color: white; }
+
+span {
+  color: white; }
 
 .header {
   background-color: black;
+  background-image: url("http://farm3.staticflickr.com/2447/4070581709_1204f25e3b_z.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   height: 200px; }
   .header h1 {
+    margin: 20px auto;
+    width: 370px;
+    height: 150px;
     color: red;
     text-align: center;
     font-size: 70px;
-    padding: 50px; }
+    font-weight: bold;
+    text-shadow: 5px 5px #111111; }
 
 .foodlist {
   margin-top: 20px; }
@@ -5836,24 +5849,47 @@ body {
   .foodlist p {
     font-size: 20px; }
 
+.container p {
+  color: white; }
 .container h1 {
   text-align: center;
-  font-size: 60px; }
+  font-size: 60px;
+  color: white; }
 .container h2 {
-  font-size: 40px; }
+  font-size: 40px;
+  color: white; }
 .container h3 {
-  font-weight: bolder; }
+  font-weight: bolder;
+  color: white; }
 .container .checkoutItem {
   border: black solid 1px;
   border-radius: 5px;
   text-align: center;
-  background-color: red;
+  background-color: green;
   width: 120px; }
 
 .footer {
   background-color: black;
-  height: 100px; }
+  height: auto; }
+  .footer div {
+    font-size: 15px; }
+  .footer p {
+    color: white;
+    text-align: center; }
+  .footer h1 {
+    text-align: right;
+    margin-top: 0px;
+    color: white; }
+  .footer .hours p {
+    text-align: left; }
 
+@media (max-width: 1000px) {
+  .footer h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px; }
+  .footer .hours p {
+    text-align: center; } }
 .Checkout {
   float: right;
   width: 150px;
@@ -5875,7 +5911,8 @@ body {
 
 .Total {
   margin-top: 20px;
-  font-size: 40px; }
+  font-size: 40px;
+  color: white; }
 
 .confirmForm {
   position: fixed;

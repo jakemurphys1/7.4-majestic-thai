@@ -28,6 +28,7 @@ var CheckoutView = React.createClass({displayName: "CheckoutView",
     var TotalOrder = {"Date":Date.now(),"Bill":TotalBill,"Order":Items}
     console.log("The Total Order is: " + TotalOrder)
   MyModel.create(TotalOrder)
+   console.log("Order has been sent to: http://tiny-lasagna-server.herokuapp.com/collections/Jake-Thai/")
   Backbone.history.navigate("menu",{trigger:true})
 
 //remove all items from local collections
@@ -42,8 +43,8 @@ while (modelItem = this.props.collection.first()) {
       TotalBill+=model.get("cost");
         return (
               React.createElement("div", {key: model.get("_id"), className: "col-md-6 col-sm-12"}, 
-                React.createElement("div", {className: "Items col-xs-9 "}, model.get("Name")), 
-                React.createElement("div", {className: "Items col-xs-3"}, " ", "$" + (model.get("cost")/100).toFixed(2))
+                React.createElement("div", {className: "Items col-xs-9 "}, React.createElement("span", null, model.get("Name"))), 
+                React.createElement("div", {className: "Items col-xs-3"}, " ", React.createElement("span", null, "$" + (model.get("cost")/100).toFixed(2)))
               ))
     });
     TotalBill = "$" + (TotalBill/100).toFixed(2)
@@ -242,15 +243,15 @@ module.exports={
     "cost":600},
   ],
   "Rice":[
-    {"Name":"Chicken",
+    {"Name":"Chicken w/ Rice",
     "cost":650},
-    {"Name":"Pork",
+    {"Name":"Pork w/ Rice",
     "cost":750},
-    {"Name":"Shrimp",
+    {"Name":"Shrimp w/ Rice",
     "cost":950},
-    {"Name":"Steak",
+    {"Name":"Steak w/ Rice",
     "cost":1050},
-    {"Name":"Chicken and Shrimp",
+    {"Name":"Chicken and Shrimp w/ Rice",
     "cost":1250},
   ],
   "Desserts":[
@@ -262,9 +263,9 @@ module.exports={
     "cost":150},
   ],
   "Noodles":[
-    {"Name":"Vegetable","cost":650},
-    {"Name":"Pork","cost":750},
-    {"Name":"Chicken","cost":850},
+    {"Name":"Vegetable w/ Noodles","cost":650},
+    {"Name":"Pork w/ Noodles","cost":750},
+    {"Name":"Chicken w/ Noodles","cost":850},
   ]
 }
 

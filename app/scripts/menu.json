@@ -8,15 +8,15 @@
     "cost":600},
   ],
   "Rice":[
-    {"Name":"Chicken",
+    {"Name":"Chicken w/ Rice",
     "cost":650},
-    {"Name":"Pork",
+    {"Name":"Pork w/ Rice",
     "cost":750},
-    {"Name":"Shrimp",
+    {"Name":"Shrimp w/ Rice",
     "cost":950},
-    {"Name":"Steak",
+    {"Name":"Steak w/ Rice",
     "cost":1050},
-    {"Name":"Chicken and Shrimp",
+    {"Name":"Chicken and Shrimp w/ Rice",
     "cost":1250},
   ],
   "Desserts":[
@@ -28,8 +28,8 @@
     "cost":150},
   ],
   "Noodles":[
-    {"Name":"Vegetable","cost":650},
-    {"Name":"Pork","cost":750},
-    {"Name":"Chicken","cost":850},
+    {"Name":"Vegetable w/ Noodles","cost":650},
+    {"Name":"Pork w/ Noodles","cost":750},
+    {"Name":"Chicken w/ Noodles","cost":850},
   ]
 }

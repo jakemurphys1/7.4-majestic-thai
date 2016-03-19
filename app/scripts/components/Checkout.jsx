@@ -26,6 +26,7 @@ var CheckoutView = React.createClass({
     var TotalOrder = {"Date":Date.now(),"Bill":TotalBill,"Order":Items}
     console.log("The Total Order is: " + TotalOrder)
   MyModel.create(TotalOrder)
+   console.log("Order has been sent to: http://tiny-lasagna-server.herokuapp.com/collections/Jake-Thai/")
   Backbone.history.navigate("menu",{trigger:true})
 
 //remove all items from local collections
@@ -40,8 +41,8 @@ while (modelItem = this.props.collection.first()) {
       TotalBill+=model.get("cost");
         return (
               <div key={model.get("_id")} className="col-md-6 col-sm-12">
-                <div className = "Items col-xs-9 ">{model.get("Name")}</div>
-                <div className = "Items col-xs-3"> {"$" + (model.get("cost")/100).toFixed(2)}</div>
+                <div className = "Items col-xs-9 "><span>{model.get("Name")}</span></div>
+                <div className = "Items col-xs-3"> <span>{"$" + (model.get("cost")/100).toFixed(2)}</span></div>
               </div>)
     });
     TotalBill = "$" + (TotalBill/100).toFixed(2)
